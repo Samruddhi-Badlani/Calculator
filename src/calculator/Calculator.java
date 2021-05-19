@@ -19,8 +19,13 @@ import javax.swing.border.Border;
 
 import com.sun.net.httpserver.Authenticator.Result;
 
-
+/***
+ * This is a simple calculator application created using Java 
+ * @author samruddhi
+ *
+ */
 public class Calculator implements ActionListener {
+	// Creating a frame panel and buttons for the calculator
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 	JTextArea textArea=new JTextArea(4,20);
@@ -43,7 +48,9 @@ public class Calculator implements ActionListener {
 	JButton clearButton = new JButton();
 	JButton equalButton=new JButton();
 	
-	String expressionString;
+	// number1: first operand
+	// number2: second operand
+	// result: to store the result
 	Double number1,number2;
 	Double result;
 	int add=0,mul=0,sub=0,div=0;
